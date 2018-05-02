@@ -1,4 +1,4 @@
-/*Responsive design for viewport more than 829px*/
+/*Responsive design for viewport up to 570px*/
 
 /* Reset all elements*/
 * {
@@ -6,7 +6,8 @@
   padding: 0;
 }
 
-/* CSS Styles */
+@charset "utf-8";
+/* CSS Document */
 
 body,td,th,p{
 	font-family: Arial, Helvetica, sans-serif;
@@ -233,7 +234,6 @@ nav.breadcrumb {
   font-weight: 200;
   letter-spacing: 0;
   margin-top: 500px;
-  padding-top: 20px;
   /*margin: 20px 0 30px;*/
   text-transform: uppercase;
   text-align: center;
@@ -286,16 +286,17 @@ nav.breadcrumb {
 #reviews-list li {
   background-color: #fff;
   border: 2px solid #f3f3f3;
+    border-radius: 10px 50px;
   display: block;
   list-style-type: none;
   margin: 0 0 30px;
   overflow: hidden;
-  padding: 0 20px 20px;
+  padding: 30px;
   /*position: relative;*/
   width: 85%;
 }
 #reviews-list li p {
-  margin: 0 0 10px;
+  margin: 0 0 ;
   font-size:1.1em;
 }
 #restaurant-hours td {
@@ -304,6 +305,18 @@ nav.breadcrumb {
   margin:0 10px;
 }
 
+.boldName {
+	font-weight: bold;
+	float: left;
+}
+.alignRight {
+	float: right;
+}
+.rating {
+	color: #f58500;
+
+padding-top: 30px;
+}
 /* ====================== Accessibility ====================== */
 
 .skip-link {
@@ -324,19 +337,20 @@ nav.breadcrumb {
 
 .grid {
   display: grid;
-  grid-gap: 5px;
+  grid-gap: 20px;
 }
 
 .grid-restaurants-list ul {
   display: grid;
-  grid-gap: 0px 20px;
+  grid-gap: 10px;
   padding: 0;
   grid-template-columns: 33% 33% 34%;
+  /*grid-template-rows: 80%;*/
 }
 
 .grid-reviews-container ul {
   display: grid;
-  grid-gap: 0px 20px;
+  grid-gap: 10px;
   padding: 0;
   grid-template-columns: 50% 50%;
 }
