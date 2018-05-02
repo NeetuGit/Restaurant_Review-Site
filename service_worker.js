@@ -1,4 +1,4 @@
-var cache_name = 'restaurant-app-index';
+var cache_name = 'restaurant-app';
 var urlsToCache = [
   '/',
   '/css/style.css',
@@ -49,11 +49,11 @@ self.addEventListener('activate', function(event){
 // Cache and return requests
 self.addEventListener('fetch', function(event) {
   event.respondWith(
-    caches.match(event.request).then(function(response){
-      if(response) {
-        return response;
-      }
-      return fetch(event.request);
-    })
-  );
+   caches.match(event.request).then(function(response){
+     if(response) {
+       return response;
+    }
+     return fetch(event.request);
+   })
+ );
 });
