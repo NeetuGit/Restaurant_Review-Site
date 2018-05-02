@@ -118,7 +118,7 @@ fillReviewsHTML = (reviews = self.restaurant.reviews) => {
 createReviewHTML = (review) => {
   const li = document.createElement('li');
   const name = document.createElement('p');
-name.classList.add('boldName');
+  name.classList.add('boldName');
   name.innerHTML = review.name;
   li.appendChild(name);
 
